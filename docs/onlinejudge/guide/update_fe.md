@@ -25,7 +25,7 @@ dist
 
 ```
 
-Copy the `dist` folder to a directory on the server, such as `/data/OnlineJudgeDeploy/data/backend/dist`, then modify `docker-compose.yml`, `volumes in the `oj-backend` module Add a line `- /data/OnlineJudgeDeploy/data/backend/dist:/app/dist` in the `(please modify the actual path before the colon), and then `docker-compose up -d`.
+Copy the `dist` folder to a directory on the server, such as `/data/OnlineJudgeDeploy/data/backend/dist`, then modify `docker-compose.yml`, `volumes`  in the oj-backend ` module Add a line `- /data/OnlineJudgeDeploy/data/backend/dist:/app/dist` in the `(please modify the actual path before the colon), and then `docker-compose up -d`.
 
 Note that this modification method will overwrite the front-end files in the container. When a new version of the front-end is released in the future, please use the same method to update.
 
